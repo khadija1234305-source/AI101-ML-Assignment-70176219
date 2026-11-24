@@ -1,0 +1,10 @@
+transformers
+datasets
+sentencepiece
+sacrebleu
+sacremoses
+torch
+pandas
+numpy
+matplotlib
+scikit-learn
