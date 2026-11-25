@@ -103,7 +103,7 @@ AI101-ML-Assignment-70176219/
     ├── requirements.txt
     ├── AI_DISCLOSURE.md
     ├── report.pdf
-    └── figures/
+    
 ```
 
 *Note: The structure represents the intended organization. Update filenames and folders if your actual uploaded files differ.*
