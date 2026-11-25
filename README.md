@@ -49,10 +49,26 @@ One task has been selected from each of the three assignment pools: Pool A, Pool
 
 - **Problem Type:** Sequence-to-Sequence Learning
 - **Dataset:** OPUS-100 (English–Urdu)
-- **Objective:** Translate English sentences into Urdu using a machine learning model.
+- **Objective:** Translate English sentences into Urdu using a pretrained neural machine translation model.
 - **Learning Approach:** Supervised Sequence-to-Sequence Learning (Text → Text)
-- **Pretrained Model:** Helsinki-NLP/opus-mt-en-ur
+- **Pretrained Model:** Helsinki-NLP/opus-mt-en-ur (MarianMT)
+- **Training Samples:** 20,000
+- **Validation Samples:** 1,000
+- **Test Samples Evaluated:** 500
+- **Training Epochs:** 1
+- **Hardware:** Google Colab Tesla T4 GPU
 - **Evaluation Metrics:** BLEU and chrF
+
+**C1 Experimental Results**
+
+| Metric | Result |
+|---|---:|
+| Training Loss | 0.4505 |
+| Validation Loss | 0.8763 |
+| BLEU Score | 23.02 |
+| chrF Score | 43.55 |
+
+The model successfully generated Urdu translations from English sentences. Evaluation showed that the model learned useful translation patterns, although some outputs contained grammatical errors or differences in meaning.
 
 ---
 
@@ -71,6 +87,9 @@ AI101-ML-Assignment-70176219/
 ├── B2/
 │   ├── B2_Wine_Reviews.ipynb
 │   ├── README.md
+│   ├── requirements.txt
+│   ├── AI_DISCLOSURE.md
+│   ├── report.pdf
 │   ├── points_distribution.png
 │   ├── price_distribution.png
 │   ├── log_price_distribution.png
@@ -80,11 +99,14 @@ AI101-ML-Assignment-70176219/
 │
 └── C1/
     ├── C1_English_Urdu_Translation.ipynb
-    ├── figures/
-    └── report.pdf
+    ├── README.md
+    ├── requirements.txt
+    ├── AI_DISCLOSURE.md
+    ├── report.pdf
+    └── figures/
 ```
 
-*Note: The structure shows the intended organization. Update filenames if your actual uploaded files use different names.*
+*Note: The structure represents the intended organization. Update filenames and folders if your actual uploaded files differ.*
 
 ---
 
@@ -99,6 +121,9 @@ AI101-ML-Assignment-70176219/
 - Seaborn
 - Scikit-learn
 - Hugging Face Transformers
+- Hugging Face Datasets
+- PyTorch
+- SacreBLEU
 - Git and GitHub
 
 ## Learning Objectives
@@ -115,11 +140,11 @@ Through these assignments, I aim to:
 
 ## Academic Integrity and AI Use Disclosure
 
-All experiments, results, and conclusions are reported based on the work performed for the assignments. Any use of AI tools for assistance will be disclosed according to the course requirements.
+All experiments, results, and conclusions are reported based on the work performed for the assignments. AI tools were used for assistance with understanding concepts, debugging, and organizing documentation. AI assistance is disclosed in the respective task documentation.
 
 ## Conclusion
 
-These assignments provide practical experience with different machine learning approaches, from classification and regression to sequence-to-sequence machine translation. They demonstrate the application of artificial intelligence techniques to real-world problems.
+These assignments provide practical experience with different machine learning approaches, from classification and regression to sequence-to-sequence machine translation. They demonstrate the application of artificial intelligence techniques to real-world problems using structured and unstructured datasets.
 
 ---
 
